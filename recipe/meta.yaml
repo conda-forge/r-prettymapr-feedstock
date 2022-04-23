@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/prettymapr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/prettymapr/prettymapr_{{ version }}.tar.gz
-  sha256: 20365be5b00803a8b1924f5b8065c4f087b66b0050f2ef59af79227128b83294
+  sha256: 6e00aef25a72e7a49e3b2c851b6abd390b04ec3b11f45d7a2647cef4274c8d4e
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,12 +44,10 @@ test:
 about:
   home: https://github.com/paleolimbot/prettymapr
   license: GPL-2
-  summary: Automates the process of creating a scale bar and north arrow in any package that
-    uses base graphics to plot in R. Bounding box tools help find and manipulate extents.
-    Finally, there is a function to automate the process of setting margins, plotting
-    the map, scale bar, and north arrow, and resetting graphic parameters upon completion.
+  summary: Automates the process of creating a scale bar and north arrow in any package that uses base graphics to plot in R. Bounding box tools help find and manipulate extents. Finally, there is a function to automate the process of setting margins, plotting the map, scale bar, and north arrow, and resetting graphic parameters
+    upon completion.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
