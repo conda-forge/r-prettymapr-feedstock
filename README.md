@@ -3,7 +3,7 @@ About r-prettymapr
 
 Home: https://github.com/paleolimbot/prettymapr
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-prettymapr-feedstock/blob/main/LICENSE.txt)
 
