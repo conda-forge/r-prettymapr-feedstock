@@ -1,11 +1,11 @@
-About r-prettymapr
-==================
+About r-prettymapr-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-prettymapr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/paleolimbot/prettymapr
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-prettymapr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automates the process of creating a scale bar and north arrow in any package that uses base graphics to plot in R. Bounding box tools help find and manipulate extents. Finally, there is a function to automate the process of setting margins, plotting the map, scale bar, and north arrow, and resetting graphic parameters upon completion.
 
